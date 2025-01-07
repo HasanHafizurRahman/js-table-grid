@@ -1,6 +1,6 @@
 {
   "name": "js-table-grid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./dist/js-table.js",   
   "module": "./dist/js-table.js",
   "exports": {

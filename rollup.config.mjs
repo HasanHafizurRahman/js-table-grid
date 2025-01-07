@@ -1,4 +1,3 @@
-// rollup.config.js
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 
@@ -19,9 +18,8 @@ export default {
   ],
   plugins: [
     postcss({
-      // Automatically processes CSS in your imports
-      extract: true, // Extract CSS into a separate file
-      minimize: true, // Minimize the CSS
+      extract: true, 
+      minimize: true,
     }),
   ],
 };
