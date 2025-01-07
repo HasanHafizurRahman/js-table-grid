@@ -1,0 +1,21 @@
+.js-table-container {
+  margin: 20px;
+}
+
+.js-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.js-table th, .js-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.js-pagination {
+  margin-top: 10px;
+}
+
+.js-pagination-btn {
+  margin: 0 5px;
+}

@@ -1,0 +1,15 @@
+# Ignore everything except dist and package.json
+src/
+public/
+node_modules/
+rollup.config.js
+demo.js
+*.log
+*.html
+*.png
+*.lock
+*.map
+
+# Ignore build artifacts from dev environment
+.DS_Store
+Thumbs.db
