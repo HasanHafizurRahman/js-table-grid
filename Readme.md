@@ -1,35 +1,33 @@
-JS Table Grid
+# JS Table Grid
 
 JS Table Grid is a lightweight and customizable data table library built with vanilla JavaScript. It provides features such as pagination, filtering, sorting, and printing, making it easy to display and manage tabular data.
 
-Features
+## Features
 
-Pagination
+- Pagination
+- Filtering
+- Sorting by columns
+- Print table functionality
+- Lightweight and dependency-free
+- Customizable styling
 
-Filtering
-
-Sorting by columns
-
-Print table functionality
-
-Lightweight and dependency-free
-
-Customizable styling
-
-Installation
+## Installation
 
 Install the package using npm:
 
+```bash
 npm install js-table-grid
+```
 
-Usage
+## Usage
 
-Basic Example
+### Basic Example
 
 Here is an example of how to use JS Table Grid in your project:
 
-HTML
+#### HTML
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,11 +47,13 @@ HTML
   <script type="module" src="./main.js"></script>
 </body>
 </html>
+```
 
-JavaScript
+#### JavaScript
 
-Create a main.js file in the root of your project:
+Create a `main.js` file in the root of your project:
 
+```javascript
 import { JsTable } from 'js-table-grid';
 import 'js-table-grid/dist/js-table.min.css';
 
@@ -77,63 +77,73 @@ document.querySelector('.js-search').addEventListener('input', (e) => {
 document.querySelector('.js-sort-name').addEventListener('click', () => {
   table.sortData('name', 'asc');
 });
+```
 
-Styles
+### Styles
 
 Make sure you include the CSS file for basic styling. If you are using a bundler like Vite, you can import the CSS directly as shown above.
 
-API
+## API
 
-JsTable
+### `JsTable`
 
-Constructor
+#### Constructor
 
+```javascript
 const table = new JsTable(data, columns);
+```
 
-data: An array of objects representing the table rows.
+- `data`: An array of objects representing the table rows.
+- `columns`: An array of strings representing the column names.
 
-columns: An array of strings representing the column names.
+#### Methods
 
-Methods
+- `search(query: string): void`
+  - Filters the table data based on the query.
 
-search(query: string): void
-Filters the table data based on the query.
+- `sortData(column: string, direction: 'asc' | 'desc'): void`
+  - Sorts the table data by the specified column in the given direction.
 
-sortData(column: string, direction: 'asc' | 'desc'): void
-Sorts the table data by the specified column in the given direction.
+- `printTable(): void`
+  - Opens a print dialog with the current table content.
 
-printTable(): void
-Opens a print dialog with the current table content.
-
-Development
+## Development
 
 To test or modify the package locally:
 
-Clone the repository:
+1. Clone the repository:
 
-git clone https://github.com/HasanHafizurRahman/js-table-grid.git
-cd js-table-grid
+   ```bash
+   git clone https://github.com/HasanHafizurRahman/js-table-grid.git
+   cd js-table-grid
+   ```
 
-Install dependencies:
+2. Install dependencies:
 
-npm install
+   ```bash
+   npm install
+   ```
 
-Build the project:
+3. Build the project:
 
-npm run build
+   ```bash
+   npm run build
+   ```
 
-Run a development server (e.g., Vite):
+4. Run a development server (e.g., Vite):
 
-npm run dev
+   ```bash
+   npm run dev
+   ```
 
-Contributing
+## Contributing
 
-Contributions are welcome! Feel free to submit issues or pull requests on the GitHub repository.
+Contributions are welcome! Feel free to submit issues or pull requests on the [GitHub repository](https://github.com/HasanHafizurRahman/js-table-grid).
 
-License
+## License
 
 This project is licensed under the ISC License.
 
-Author
+## Author
 
 Hasan Hafizur Rahman
