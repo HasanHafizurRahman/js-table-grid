@@ -55,7 +55,7 @@ Create a `main.js` file in the root of your project:
 
 ```javascript
 import { JsTable } from 'js-table-grid';
-import 'js-table-grid/dist/js-table.min.css';
+import 'js-table-grid/css';
 
 // Sample data
 const data = [

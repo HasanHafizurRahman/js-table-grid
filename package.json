@@ -1,12 +1,13 @@
 {
   "name": "js-table-grid",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./dist/js-table.js",   
   "module": "./dist/js-table.js",
   "exports": {
-    "import": "./dist/js-table.js", 
-    "require": "./dist/js-table.js" 
-  },
+  "import": "./dist/js-table.js",
+  "require": "./dist/js-table.js",
+  "css": "./dist/js-table.min.css"
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
